@@ -29,12 +29,8 @@ dependencies {
     implementation "io.micronaut:micronaut-http-client"
     implementation "io.micronaut:micronaut-http-server-netty"
 
-    //tag::micronaut-graal[]
     annotationProcessor "io.micronaut:micronaut-graal"
-    //end::micronaut-graal[]
-    //tag::svm[]
-    compileOnly "org.graalvm.nativeimage:svm:19.3.0"
-    //end::svm[]
+    compileOnly "org.graalvm.nativeimage:svm"
 
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
     testAnnotationProcessor platform("io.micronaut:micronaut-bom:$micronautVersion")
@@ -43,8 +39,6 @@ dependencies {
     testImplementation "org.junit.jupiter:junit-jupiter-api"
     testImplementation "io.micronaut.test:micronaut-test-junit5"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine"
-
-
 }
 
 test.classpath += configurations.developmentOnly
