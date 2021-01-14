@@ -1,6 +1,6 @@
-#tag::config[]
 micronaut:
+  application:
+    name: cache
   caches:
-    headlines: # <1>
+    headlines:
       charset: 'UTF-8'
-#end::config[]
