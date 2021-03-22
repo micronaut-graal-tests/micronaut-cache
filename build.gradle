@@ -40,5 +40,4 @@ java {
 
 nativeImage {
     imageName("cache")
-    args = ["-H:+StaticExecutableWithDynamicLibC"]
 }
