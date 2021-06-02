@@ -3,8 +3,8 @@ package example.micronaut;
 import io.micronaut.cache.annotation.CacheInvalidate;
 import io.micronaut.cache.annotation.CachePut;
 import io.micronaut.cache.annotation.Cacheable;
+import jakarta.inject.Singleton;
 
-import javax.inject.Singleton;
 import java.time.Month;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-@Singleton // <1>
+@Singleton
 public class NewsService {
 
     Map<Month, List<String>> headlines = new HashMap<Month, List<String>>() {{
