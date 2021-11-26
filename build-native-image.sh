@@ -1,3 +1,3 @@
 #!/bin/bash
-./gradlew nativeImage
-cp build/native-image/cache .
+./gradlew nativeCompile
+cp build/native/nativeCompile/cache .
